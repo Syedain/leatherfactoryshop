@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Leather Jacket | Leather Factory Shop</title>
+  <meta name="description" content="Premium handmade leather jacket by Leather Factory Shop." />
+  <link rel="icon" href="assets/logo-tan.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/lfs.css" />
+  <link rel="stylesheet" href="css/pages.css" />
+</head>
+<body data-page="product">
+  <main class="wrap">
+    <nav class="crumbs" aria-label="Breadcrumb" style="margin-top:30px" id="crumbs"></nav>
+    <div class="pd">
+      <div class="pd__gallery">
+        <div class="pd__thumbs" id="thumbs"></div>
+        <div class="pd__view" id="view">
+          <div class="pd__photo" id="photo"><img id="photoImg" alt="" /></div>
+          <div class="pd__hang" id="hang"><div class="rail"></div></div>
+          <span class="pd__badge" id="badge">Hover to zoom</span>
+        </div>
+      </div>
+      <div class="pd__info">
+        <span class="pd__cat" id="pCat" data-reveal data-now></span>
+        <h1 class="pd__name" id="pName" data-split data-now></h1>
+        <div id="pStars" data-reveal data-now data-delay=".2"></div>
+        <div class="pd__price" data-reveal data-now data-delay=".25"><b id="pPrice"></b><small id="pRange"></small></div>
+        <p class="lead" id="pDesc" data-reveal data-now data-delay=".3"></p>
+        <div data-reveal data-now data-delay=".35">
+          <div class="pd__label"><span>Size: <b id="pSize">M</b></span><a href="sizing.html">Size guide</a></div>
+          <div class="sizes" id="sizes"></div>
+        </div>
+        <div class="pd__buy" data-reveal data-now data-delay=".4">
+          <div class="qty"><button data-q="-1" aria-label="Less">−</button><span id="qty">1</span><button data-q="1" aria-label="More">+</button></div>
+          <button class="btn" id="add"><span>Add to cart</span><svg><use href="#i-bag"/></svg></button>
+          <a class="btn btn--ghost btn--full" id="buyNow" href="cart.html"><span>Buy it now</span></a>
+        </div>
+        <div class="pd__perks" data-reveal data-now data-delay=".45">
+          <div><b>Premium leather</b>Cowhide &amp; lambskin</div>
+          <div><b>Handmade</b>Cut &amp; sewn by craftspeople</div>
+          <div><b>Fast replies</b>Customer care in minutes</div>
+        </div>
+        <div class="acc" data-reveal data-now data-delay=".5">
+          <div class="acc__item is-open"><button class="acc__q">Description <i></i></button><div class="acc__a"><div id="accDesc"></div></div></div>
+          <div class="acc__item"><button class="acc__q">Leather &amp; care <i></i></button><div class="acc__a"><div>Made with premium cowhide or lambskin leather. Wipe with a soft damp cloth, condition the leather a few times a year, and hang it on a wide hanger away from direct heat. <em>(Sample text: replace with the care notes for each product.)</em></div></div></div>
+          <div class="acc__item"><button class="acc__q">Shipping &amp; returns <i></i></button><div class="acc__a"><div>See <a href="help.html#shipping" style="color:var(--tan)">Shipping &amp; Payments</a> and <a href="help.html#returns" style="color:var(--tan)">Exchange &amp; Returns</a>. For bulk orders, email support@leatherfactoryshop.com.</div></div></div>
+        </div>
+      </div>
+    </div>
+
+    <section class="block">
+      <div class="sec-head" style="display:flex;justify-content:space-between;align-items:flex-end;gap:20px;flex-wrap:wrap;margin-bottom:30px">
+        <h2 class="h-md" data-split>You may also <em>like</em></h2>
+        <a class="link-arrow" id="moreLink" href="shop.html">See the whole rack <svg><use href="#i-arrow"/></svg></a>
+      </div>
+      <div class="pgrid" id="related" data-stagger></div>
+    </section>
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script src="js/lfs-data.js"></script>
+  <script src="js/lfs-core.js"></script>
+  <script src="js/product.js"></script>
+</body>
+</html>
